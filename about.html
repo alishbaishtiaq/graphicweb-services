@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Me | GraphicWeb</title>
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <style>
+  
+
+    /* === HERO SECTION WITH IMAGE + GRADIENT === */
+    .gradient-bg {
+      background: linear-gradient(135deg, rgba(199, 112, 240, 0.85), rgba(237, 110, 160, 0.85));
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 0;
+    }
+
+    /* === ABOUT IMAGE === */
+    .about-image {
+      border-radius: 1rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    /* === STATS === */
+    .about-stats {
+      background: linear-gradient(135deg, #c770f0, #ed6ea0);
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .about-hero {
+        text-align: center;
+      }
+
+      .gradient-bg {
+        padding: 60px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4 text-gradient" href="#">GraphicWeb.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active nav-underline mx-2" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-underline mx-2" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-underline mx-2" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-underline mx-2" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <a href="#" class="btn btn-gradient ms-3">Let's Talk</a>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Custom Styles -->
+  <style>
+    .text-gradient {
+      background: linear-gradient(to right, #b366f8, #f58ed5);
+  color: white;
+      -webkit-text-fill-color: transparent;
+    }
+  
+    .btn-gradient {
+      background: linear-gradient(to right, #b366f8, #f58ed5);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 20px;
+      transition: 0.3s ease;
+    }
+  
+    .btn-gradient:hover {
+      opacity: 0.9;
+      transform: scale(1.05);
+    }
+  
+    .nav-link {
+      position: relative;
+      font-weight: 500;
+      color: #333 !important;
+      transition: 0.3s ease;
+    }
+  
+    .nav-link:hover {
+      color: #b366f8 !important;
+    }
+  
+    .nav-underline::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(to right, #b366f8, #f58ed5);
+      transition: width 0.3s ease;
+    }
+  
+    .nav-underline:hover::after {
+      width: 100%;
+    }
+    .text-gradient {
+        background: linear-gradient(to right, #c770f0, #ed6ea0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text; /* for Firefox */
+        color: transparent; /* fallback */
+        }
+
+  </style>
+  
+
+  <!-- HERO SECTION -->
+
+
+  <section class="gradient-bg text-center py-5">
+    <div class="container">
+      <h1 class="fw-bold display-5">About Me</h1>
+      <p class="lead mt-2">Freelance Designer & Developer Creating Modern Brand Experience</p>
+    </div>
+  </section>
+  <!-- ABOUT CONTENT -->
+  <section class="py-5 bg-white text-dark">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Image -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="img8.webp" alt="Freelancer" class="img-fluid about-image" />
+        </div>
+        <!-- Text -->
+        <div class="col-md-6">
+          <h2 class="fw-bold mb-3">Hi, I'm the Creative Force Behind <span class="text-gradient">GraphicWeb</span></h2>
+          <p>
+            As a passionate freelancer, I help brands shine online with custom logos, sleek websites, and engaging user interfaces. My mission is to craft digital solutions that are both beautiful and functional.
+          </p>
+          <p>
+            From startups to personal portfolios, I bring ideas to life with a mix of creativity and code. Let's collaborate and create something truly impactful.
+          </p>
+          <a href="portfolio.html" class="btn btn-gradient mt-3">
+            <i class="bi bi-arrow-right-circle me-1"></i> View Portfolio
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS SECTION -->
+  <section class="about-stats py-5">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <h3 class="fw-bold">100+</h3>
+          <p>Projects Completed</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h3 class="fw-bold">50+</h3>
+          <p>Happy Clients</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h3 class="fw-bold">5+</h3>
+          <p>Years of Experience</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <section class="py-5 text-center bg-white">
+    <div class="container">
+      <h2 class="fw-bold mb-3">Let’s Work Together</h2>
+      <p class="mb-4">Need a fresh brand look or a high-converting landing page? I'm here to help.</p>
+      <a href="https://wa.me/923199726008" target="_blank" class="btn btn-gradient">
+        <i class="bi bi-whatsapp me-1"></i> Chat on WhatsApp
+      </a>
+    </div>
+  </section>
+
+<!-- Load Bootstrap JS at end -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

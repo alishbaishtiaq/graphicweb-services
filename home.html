@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GraphicWeb Services</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .hero {
+      background-color: #f8f5fc;
+      padding: 80px 0;
+    }
+    .hero h1 {
+      font-weight: bold;
+      color: #2c2c51;
+    }
+    .btn-primary-custom {
+      background-color: #d43aff;
+      border: none;
+    }
+    .highlight-box {
+      background-color: #f0e6ff;
+      padding: 15px;
+      border-radius: 15px;
+      font-size: 14px;
+      color: #6b21a8;
+    }
+    .partner-logos img {
+      max-height: 30px;
+      margin: 0 15px;
+    }
+    .benefit-icon {
+      width: 30px;
+      margin-right: 15px;
+      color: #d43aff;
+    }
+    .benefits-section {
+      background-color: #faf6ff;
+      padding: 80px 0;
+    }
+    .benefits-section h5 span {
+      color: #d43aff;
+    }
+    .scrolling-ad {
+      background: linear-gradient(to right, #c770f0, #ed6ea0);
+      color: white;
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 1rem 0;
+      position: relative;
+    }
+
+    .scrolling-content {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll-left 20s linear infinite;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .ad-item {
+      display: inline-block;
+      margin: 0 3rem;
+      text-align: center;
+    }
+
+    .ad-item i {
+      font-size: 1.8rem;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    /* Scoped Styles for Graphic Web Website */
+    .graphicweb-services {
+      background: linear-gradient(to right, #c770f0, #ed6ea0);
+      padding: 4rem 0;
+      color: white;
+    }
+
+    .graphicweb-services .service-card {
+      border-radius: 1rem;
+      background-color: white;
+      color: #333;
+      overflow: hidden;
+      transition: transform 0.3s;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    }
+
+    .graphicweb-services .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .graphicweb-services .service-img {
+      height: 180px;
+      object-fit: cover;
+      width: 100%;
+      border-radius: 0.75rem;
+    }
+
+    .graphicweb-services .tag {
+      font-size: 0.75rem;
+      background-color: #eee;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.5rem;
+      color: #6f42c1;
+      font-weight: 500;
+    }
+
+    .graphicweb-services .price-box {
+      background-color: #f8f9fa;
+      padding: 0.5rem 1rem;
+      border-radius: 1rem;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #6f42c1;
+    }
+
+
+    .graphicweb-services .author-name {
+      color: #6f42c1;
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+
+    .highlight-text {
+      color: #b366f8;
+    }
+    .btn-custom {
+      background: linear-gradient(to right, #b366f8, #f58ed5);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 20px;
+    }
+    .perks-list i {
+      color: #b366f8;
+      margin-right: 8px;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      
+    }
+    
+  </style>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4 text-gradient" href="#">GraphicWeb.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active nav-underline mx-2" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-underline mx-2" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-underline mx-2" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-underline mx-2" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <a href="#" class="btn btn-gradient ms-3">Let's Talk</a>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Custom Styles -->
+  <style>
+    .text-gradient {
+      background: linear-gradient(to right, #b366f8, #f58ed5);
+  color: white;
+      -webkit-text-fill-color: transparent;
+    }
+  
+    .btn-gradient {
+      background: linear-gradient(to right, #b366f8, #f58ed5);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 20px;
+      transition: 0.3s ease;
+    }
+  
+    .btn-gradient:hover {
+      opacity: 0.9;
+      transform: scale(1.05);
+    }
+  
+    .nav-link {
+      position: relative;
+      font-weight: 500;
+      color: #333 !important;
+      transition: 0.3s ease;
+    }
+  
+    .nav-link:hover {
+      color: #b366f8 !important;
+    }
+  
+    .nav-underline::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(to right, #b366f8, #f58ed5);
+      transition: width 0.3s ease;
+    }
+  
+    .nav-underline:hover::after {
+      width: 100%;
+    }
+    .text-gradient {
+        background: linear-gradient(to right, #c770f0, #ed6ea0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text; /* for Firefox */
+        color: transparent; /* fallback */
+        }
+
+  </style>
+ 
+  
+<!-- Hero Section -->
+<section class="hero py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <!-- Text Content -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h1 class="display-5 fw-bold">
+            Empower Your Brand<br>
+            <span class="text-gradient">with Stunning Design & Code</span>
+          </h1>
+          <p class="mt-3 text-muted">
+            We specialize in creative graphic design and custom web development to help businesses stand out online. Get noticed with modern, responsive, and impactful digital solutions.
+          </p>
+          <a href="#" class="btn btn-gradient mt-3 px-4 py-2">Get Started</a>
+        </div>
+  
+        <!-- Image & Stats -->
+        <div class="col-lg-6 text-center">
+          <img src="img8.webp" alt="Service Banner" class="img-fluid rounded-4 shadow-sm">
+          <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+            <div class="highlight-box">
+              <strong class="stat-number">100+</strong><br>Projects Delivered
+            </div>
+            <div class="highlight-box">
+              <strong class="stat-number">50+</strong><br>Satisfied Clients
+            </div>
+            <div class="highlight-box">
+              <strong class="stat-number">24/7</strong><br>Support Available
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Custom Styles -->
+  <style>
+    .hero {
+      background-color: #fdf7ff;
+    }
+  
+    .text-gradient {
+      background: linear-gradient(to right, #b366f8, #f58ed5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  
+    .btn-gradient {
+      background: linear-gradient(to right, #b366f8, #f58ed5);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      transition: 0.3s ease;
+    }
+  
+    .btn-gradient:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+  
+    .highlight-box {
+      background: #fff;
+      padding: 10px 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(179, 102, 248, 0.15);
+      text-align: center;
+      font-weight: 500;
+      width: 150px;
+      transition: 0.3s;
+    }
+  
+  
+    .stat-number {
+      font-size: 1.5rem;
+      color: #b366f8;
+    }
+  </style>
+  
+  
+  
+
+  <section class="scrolling-ad">
+    <div class="scrolling-content">
+      <div class="ad-item"><i class="bi bi-palette-fill"></i>Graphic Design</div>
+      <div class="ad-item"><i class="bi bi-laptop"></i>Web Design</div>
+      <div class="ad-item"><i class="bi bi-code-slash"></i>Web Development</div>
+      <div class="ad-item"><i class="bi bi-phone"></i>Responsive UI</div>
+      <div class="ad-item"><i class="bi bi-megaphone-fill"></i>Branding</div>
+      <div class="ad-item"><i class="bi bi-palette-fill"></i>Graphic Design</div> <!-- Repeat to loop smoothly -->
+      <div class="ad-item"><i class="bi bi-laptop"></i>Web Design</div>
+      <div class="ad-item"><i class="bi bi-code-slash"></i>Web Development</div>
+    </div>
+  </section>
+  
+
+  <section class="benefits-section py-5" style="background-color: #f9f4fd;">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <!-- Quadrant Style Image -->
+        <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+          <div class="rounded-4 p-2 d-inline-block" style="border: 2px dashed #d43aff;">
+            <div class="d-flex flex-wrap rounded-6 overflow-hidden" style="width: 300px; height: 300px;">
+              <div class="w-50 h-50"><img src="img1.webp" class="w-100 h-100 object-fit-cover" style="border-bottom-right-radius: 5rem;"/></div>
+              <div class="w-50 h-50"><img src="img2.webp" class="w-100 h-100 object-fit-cover" style="border-bottom-left-radius: 5rem;"/></div>
+              <div class="w-50 h-50"><img src="img3.webp" class="w-100 h-100 object-fit-cover" style="border-top-right-radius: 5rem;"/></div>
+              <div class="w-50 h-50"><img src="img4.webp" class="w-100 h-100 object-fit-cover" style="border-top-left-radius: 5rem;"/></div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Benefits Content -->
+        <div class="col-lg-6">
+          <h3><span style="color: #d43aff;">Benefits</span> of Our Web & Graphic Services</h3>
+          <ul class="list-unstyled mt-4">
+            <li class="mb-4 d-flex">
+              <i class="bi bi-code-slash fs-4 text-primary me-3" style="color: #d43aff;"></i>
+              <div>
+                <strong>Custom Web Development</strong><br>
+                <small class="text-muted">Responsive websites tailored to your business needs.</small>
+              </div>
+            </li>
+            <li class="mb-4 d-flex">
+              <i class="bi bi-brush fs-4 text-danger me-3" style="color: #fd5da8;"></i>
+              <div>
+                <strong>Creative Graphic Designs</strong><br>
+                <small class="text-muted">Attractive logos, cards, banners, and more.</small>
+              </div>
+            </li>
+            <li class="mb-4 d-flex">
+              <i class="bi bi-people fs-4 text-success me-3" style="color: #7c3aed;"></i>
+              <div>
+                <strong>Expert Team</strong><br>
+                <small class="text-muted">Get support from industry professionals.</small>
+              </div>
+            </li>
+            <li class="mb-4 d-flex">
+              <i class="bi bi-camera-video fs-4 text-warning me-3" style="color: #fc4e2a;"></i>
+              <div>
+                <strong>Video Guides</strong><br>
+                <small class="text-muted">Learn how to manage your content easily.</small>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="graphicweb-services">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Our Services</h2>
+        <p class="text-white-50">At <strong>Graphic Web Website</strong>, we deliver premium web development and graphic design solutions that bring your vision to life.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Web Development Service -->
+        <div class="col-md-4">
+          <div class="service-card p-3">
+            <img src="img6.webp" class="service-img" alt="Web Development">
+            <div class="mt-3">
+              <span class="tag">Web Development</span>
+              <span class="float-end text-warning fw-bold"><i class="bi bi-star-fill"></i> 4.9</span>
+              <h5 class="mt-2">Custom Website Design</h5>
+              <p class="mb-1"><i class="bi bi-globe me-1"></i> Static, Dynamic & E-commerce</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="price-box">From PKR 25,000</span>
+                <div class="d-flex align-items-center">
+                  <span class="author-name">Graphic Web Website</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Graphic Design Service -->
+        <div class="col-md-4">
+          <div class="service-card p-3">
+            <img src="img5.webp" class="service-img" alt="Graphic Design">
+            <div class="mt-3">
+              <span class="tag">Graphic Design</span>
+              <span class="float-end text-warning fw-bold"><i class="bi bi-star-fill"></i> 5.0</span>
+              <h5 class="mt-2">Branding & Print Design</h5>
+              <p class="mb-1"><i class="bi bi-palette me-1"></i> Logos, Flyers, Banners, and More</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="price-box">From PKR 1,000</span>
+                <div class="d-flex align-items-center">
+                  <span class="author-name">Graphic Web Website</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ui ux Service -->
+        <div class="col-md-4">
+            <div class="service-card p-3">
+              <img src="img7.webp" class="service-img" alt="UI UX Design">
+              <div class="mt-3">
+                <span class="tag">UI/UX Design</span>
+                <span class="float-end text-warning fw-bold"><i class="bi bi-star-fill"></i> 5.0</span>
+                <h5 class="mt-2">Creative UI/UX Design</h5>
+                <p class="mb-1"><i class="bi bi-phone me-1"></i> Modern interfaces for websites & mobile apps</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <span class="price-box">From PKR 1,000</span>
+                  <div class="d-flex align-items-center">
+                    <span class="author-name">Graphic Web Website</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+      </div>
+    </div>
+  </section>
+  
+  <div class="container py-5">
+    <div class="row align-items-center">
+      <!-- Text Section -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h4><strong>If You Need Creative Solutions</strong><br>
+        Then <span class="highlight-text">Choose Our Expert Services</span></h4>
+        <p class="text-muted">
+          Unlock the potential of your brand with innovative graphic design and web development. Whether you’re building a new identity or upgrading your digital presence, we’re here to deliver results that impress.
+        </p>
+        <h5 class="mb-3">Enjoy Many Perks</h5>
+        <div class="row">
+          <div class="col-6 perks-list">
+            <p><i class="bi bi-check-circle"></i> Unique Visual Identity</p>
+            <p><i class="bi bi-check-circle"></i> Modern Websites</p>
+            <p><i class="bi bi-check-circle"></i> Brand-Focused Design</p>
+          </div>
+          <div class="col-6 perks-list">
+            <p><i class="bi bi-check-circle"></i> Creative Collaboration</p>
+            <p><i class="bi bi-check-circle"></i> Latest Tech Stack</p>
+            <p><i class="bi bi-check-circle"></i> Fast Support</p>
+          </div>
+        </div>
+        <button class="btn btn-custom mt-3">Contact Us</button>
+      </div>
+
+      <!-- Image Section -->
+      <div class="col-md-6 text-center">
+        <div class="image-container d-inline-block">
+          <img src="img8.webp" alt="Design Expert" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Footer Section -->
+<footer class="text-white pt-5 pb-4 footer-glow">
+    <div class="container">
+      <div class="row gy-5 justify-content-center text-md-start text-center">
+  
+        <!-- About Me -->
+        <div class="col-md-6 col-lg-4">
+          <h5 class="fw-bold mb-3">GraphicWeb.</h5>
+          <p>I'm a freelance designer & developer passionate about helping brands grow through bold visuals and powerful code. Let’s build something awesome together!</p>
+          <div class="d-flex justify-content-md-start justify-content-center gap-3 mt-3">
+            <a href="#" class="text-white social-icon"><i class="bi bi-whatsapp fs-5"></i></a>
+            <a href="#" class="text-white social-icon"><i class="bi bi-instagram fs-5"></i></a>
+            <a href="#" class="text-white social-icon"><i class="bi bi-linkedin fs-5"></i></a>
+          </div>
+        </div>
+  
+        <!-- Quick Links -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <h6 class="text-uppercase fw-bold mb-3">Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="home.html" class="footer-link"><i class="bi bi-house-door-fill me-2"></i>Home</a></li>
+            <li><a href="about.html" class="footer-link"><i class="bi bi-person-fill me-2"></i>About</a></li>
+          </ul>
+        </div>
+  
+        <!-- Services -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <h6 class="text-uppercase fw-bold mb-3">Services</h6>
+          <ul class="list-unstyled">
+            <li><a href="logo.html" class="footer-link"><i class="bi bi-palette-fill me-2"></i>Logo Design</a></li>
+            <li><a href="web.html" class="footer-link"><i class="bi bi-laptop-fill me-2"></i>Web Design</a></li>
+            <li><a href="landing_page.html" class="footer-link"><i class="bi bi-file-earmark-code-fill me-2"></i>Landing Pages</a></li>
+            <li><a href="#" class="footer-link"><i class="bi bi-vector-pen me-2"></i>UI UX Design</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact -->
+        <div class="col-md-6 col-lg-4">
+          <h6 class="text-uppercase fw-bold mb-3">Let’s Connect</h6>
+          <p><i class="bi bi-phone-fill me-2"></i> +92 3199726008</p>
+          <p><i class="bi bi-envelope-fill me-2"></i> graphicweb111@gmail.com</p>
+          <a href="https://wa.me/923199726008" target="_blank" class="btn btn-sm btn-outline-light mt-2">
+            <i class="bi bi-whatsapp me-1"></i> Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+  
+      <hr class="my-4 border-light opacity-50" />
+  
+      <!-- Copyright -->
+      <div class="text-center small">
+        <p class="mb-0">© 2025 <strong>GraphicWeb</strong> | Crafted with 💻 by a Freelancer.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Custom Footer Styles -->
+  <style>
+    .footer-glow {
+      background: linear-gradient(135deg, #c770f0, #ed6ea0);
+      position: relative;
+      overflow: hidden;
+    }
+  
+    .footer-glow::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.2);
+      pointer-events: none;
+    }
+  
+    .footer-link {
+      text-decoration: none;
+      color: white;
+      transition: 0.3s ease;
+      display: inline-block;
+    }
+  
+    .footer-link:hover {
+      transform: translateX(4px);
+      color: #fff !important;
+      text-decoration: underline;
+    }
+  
+    .social-icon {
+      transition: transform 0.3s ease;
+    }
+  
+    .social-icon:hover {
+      transform: scale(1.2) rotate(5deg);
+      color: #fff !important;
+    }
+  
+    @media (max-width: 576px) {
+      .footer-glow .row > div {
+        text-align: center !important;
+      }
+  
+      .footer-glow .btn {
+        margin: 0 auto;
+        display: inline-block;
+      }
+    }
+  </style>
+
+  
+ <!-- Load Bootstrap JS at end -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+  </html>

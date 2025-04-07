@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | GraphicWeb</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    .gradient-bg {
+      background: linear-gradient(135deg, #c770f0, #ed6ea0);
+      color: white;
+    }
+
+    .text-gradient {
+      background: linear-gradient(to right, #c770f0, #ed6ea0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .btn-gradient {
+      background: linear-gradient(to right, #c770f0, #ed6ea0);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 0.6rem 1.4rem;
+      transition: 0.3s ease;
+    }
+
+    .btn-gradient:hover {
+      opacity: 0.9;
+      transform: scale(1.03);
+    }
+
+    .form-control:focus {
+      border-color: #c770f0;
+      box-shadow: 0 0 0 0.2rem rgba(199, 112, 240, 0.25);
+    }
+
+    .nav-link {
+      position: relative;
+      font-weight: 500;
+      color: #333 !important;
+      transition: 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #c770f0 !important;
+    }
+
+    .nav-underline::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(to right, #c770f0, #ed6ea0);
+      transition: width 0.3s ease;
+    }
+
+    .nav-underline:hover::after {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4 text-gradient" href="#">GraphicWeb.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link nav-underline mx-2" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link nav-underline mx-2" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link nav-underline mx-2" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active nav-underline mx-2" href="contact.html">Contact</a></li>
+        </ul>
+        <a href="https://wa.me/923199726008" target="_blank" class="btn btn-gradient ms-3">Let's Talk</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="gradient-bg text-center py-5">
+    <div class="container">
+      <h1 class="fw-bold display-5">Get In Touch</h1>
+      <p class="lead mt-2">Have a project in mind? I’d love to hear from you.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card p-4 shadow-sm border-0">
+            <h2 class="mb-4 text-center fw-bold">Contact Me</h2>
+            <form id="whatsapp-form" onsubmit="sendToWhatsApp(); return false;">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="name" required />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" id="email" required />
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" rows="5" required></textarea>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-gradient">
+                    <i class="bi bi-whatsapp me-1"></i> Send via WhatsApp
+                  </button>
+                </div>
+              </form>
+              
+
+          <!-- WhatsApp CTA -->
+          <div class="text-center mt-4">
+            <p class="mb-2">Prefer WhatsApp or Email?</p>
+            <a href="https://wa.me/923199726008?text=Hello%2C%20I%27m%20interested%20in%20your%20design%20and%20development%20services." target="_blank" class="btn btn-outline-success me-2">
+                <i class="bi bi-whatsapp me-1"></i> Chat on WhatsApp
+              </a>
+              
+            <a href="mailto:graphicweb111@gmail.com" class="btn btn-outline-primary">
+              <i class="bi bi-envelope me-1"></i> Send Email
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-white gradient-bg text-center py-3">
+    <div class="container">
+      <p class="mb-0">© 2025 <strong>GraphicWeb</strong> | Crafted with 💻 by a Freelancer.</p>
+    </div>
+  </footer>
+
+  <script>
+    function sendToWhatsApp() {
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+  
+      const phoneNumber = "923199726008";
+      const encodedMsg = encodeURIComponent(
+        `Hello, I'm ${name}\nEmail: ${email}\nMessage: ${message}`
+      );
+  
+      const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMsg}`;
+      window.open(whatsappURL, "_blank");
+    }
+  </script>
+  
+<!-- Load Bootstrap JS at end -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
